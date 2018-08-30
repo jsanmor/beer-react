@@ -1,0 +1,75 @@
+.beer-list{
+
+    &.collection {
+        display:flex;
+        flex-wrap: wrap;
+        border:none;
+        justify-content: space-around
+    }
+    .collection-item{
+        width: 300px;
+        padding: 10px 2px;
+        height: 551px;
+        .card{
+            overflow: hidden;
+            height: 100%;
+            .card-content{
+                padding: 18px;
+                color:black;
+                height: 244px;
+                overflow: overlay;
+            }
+            .card-title{
+                font-size: 20px;
+                color:#039be5;
+                line-height: 30px;
+                span{
+                    float: right;
+                    font-size: 0.8em;
+                    color:gray;
+               }
+            }
+        }
+    }
+    
+    .card-image img{
+        width: auto;
+        max-width: 150px;
+        height: auto;
+        max-height: 264px;
+        margin: auto;
+        margin-top: 12px;
+    }
+    
+}
+
+.beer-detail{
+    &__img{
+        height: 400px;
+        margin: auto;
+        display: block;
+    }
+    &__description{
+        font-size: 1.4rem;
+        text-align: justify;
+    }
+    .collection-item{
+        &--idle{
+            cursor: pointer;
+        }
+        &--done{
+            color:green;
+        }
+        &--disable{
+            opacity:0.7;
+            cursor:not-allowed;
+        }
+
+    }
+}
+.page-footer{
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    padding-top: 0;
+}
